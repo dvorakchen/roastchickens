@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roast Chickens</title>
+  </head>
+  <body style="margin: 0">
+    <div
+      style="
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <img id="img" src="" alt="NSFW" style="width: 100%; height: auto" />
+    </div>
+    <script>
+      let source = [
+        "https://pic.nximg.cn/file/20230327/21319742_191420870120_2.jpg",
+        "https://p1.ssl.qhmsg.com/t01429ce158ed5e393b.jpg",
+        "http://img95.699pic.com/photo/50163/7027.jpg_wh300.jpg",
+        "http://cd.zjrcjd.cn/uploads/allimg/20220722/1-220H2114K3H1.jpg",
+        "http://p7.qhimg.com/t016f9d4d73f90f79e6.jpg",
+        "https://s1.cdn.xiangha.com/caipu/201609/2220/222037158024.jpg/NjAwX2MxXzQwMA",
+        "https://n.sinaimg.cn/sinakd20200912ac/89/w1080h609/20200912/8667-iyywcsz7616309.jpg",
+        "https://img01.71360.com/file/read/www/M00/A1/04/wKj0iWFjmCSAK6T-AAVlQJpZGJ4596.jpg",
+        "http://cp1.douguo.net/upload/caiku/e/2/5/600x400_e2a1d612d69bf8bfea7d08bf64c5b795.jpg",
+        "http://img.mp.itc.cn/upload/20170622/a578ff2ed52849f1ae446eeeaa5b33cc_th.jpg",
+        "https://n.sinaimg.cn/sinakd10111/213/w2048h1365/20200903/0927-iypetiv9423879.jpg",
+        "https://n.sinaimg.cn/sinakd20200522ac/248/w640h408/20200522/af51-itvqccc5223570.jpg",
+        "https://s1.cdn.xiangha.com/zhishi/201410/29173959521.jpg/NjQwX2MyXzA",
+        "https://img95.699pic.com/photo/50121/2815.jpg_wh860.jpg",
+        "https://www.ahsz.gov.cn/group1/M00/1E/14/Cpc8VmKMRcSAdK9VAAESHZ7zoDE945.JPG",
+        "https://img01.71360.com/file/read/www/M00/A1/04/wKj0iWFjmGaALbvWAAYDunvMqjI770.jpg",
+        "https://img.zcool.cn/community/019fd35efc4ba1a801206621a686fd.jpg",
+      ];
+
+      let index = Math.floor((Math.random() * 100) % source.length);
+      console.log(index);
+
+      document.getElementById("img").src = source[index];
+    </script>
+  </body>
+</html>
